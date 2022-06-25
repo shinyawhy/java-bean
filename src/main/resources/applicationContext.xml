@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--导入spring坐标-->
+    <!--配置bean-->
+<!--    <bean id = "bookDao" class="example.dao.impl.BookDaoImpl"/>-->
+<!--    <bean id = "bookService" class="example.service.impl.BookServiceImpl">-->
+<!--        &lt;!&ndash;scope 设置是否单例&ndash;&gt;-->
+<!--    <property name="bookDao" ref="bookDao"></property>-->
+<!--    </bean>-->
+    <!--使用实例化工厂实例化bean-->
+<!--    <bean id = "userFactory" class = "example.factory.UserDaoFactory"/>-->
+<!--    <bean id = "userDao" factory-method="getUserDao" factory-bean="userFactory"/>-->
+    <!--使用facorybean-->
+    <bean id = "userDao" class="example.factory.UserDaoFactoryBean"/>
+</beans>
